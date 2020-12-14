@@ -52,7 +52,6 @@ export class API{
         }).then(resp => resp.json())
     }
 
-
     static deleteWorkout(wk_id, token) {
         return fetch(`http://woapi.us-east-2.elasticbeanstalk.com/api/workouts/${wk_id}/`, {
             method: 'DELETE',
