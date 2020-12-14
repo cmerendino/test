@@ -1,38 +1,96 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #282c34;
+    color: white;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    text-align: center;
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-container {
+    width: 50%;
+    margin: 0 25%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 0.8rem;
+    color: red;
+}
+
+button {
+    color: #444;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius:5px;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+
+}
+
+button:disabled {
+        color: #fff;
+        background-color: #000;
+        cursor: not-allowed;
+    }
+
+.grey {
+    color: grey;
+    font-size: calc(9px + 2vmin);
+}
+
+.white {
+    color: white;
+    font-size: calc(9px + 2vmin);
+}
+
+.yellow {
+    color: yellow;
+    font-size: calc(12px + 2vmin);
+}
+
+.rate-container {
+    margin-top: 20px;
+    border-top: 2px solid grey;
+}
+
+.rate-container .fa-grin-beam-sweat{
+    cursor: pointer;
+    }
+
+.workout-item{
+    display: grid;
+    grid-template-columns: 1fr auto auto
+}
+
+.workout-item svg{
+    font-size: 1.2rem;
+    margin: 25px 5px;
+}
+
+.fa-sign-out-alt {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
