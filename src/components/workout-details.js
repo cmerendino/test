@@ -23,6 +23,7 @@ function WorkoutDetails(props) {
             },
             body: JSON.stringify( {stars: rate + 1} )
         })
+            .then(res => console.log(res))
             .then( () => getDetails())
             .catch(error => console.log(error))
     }
