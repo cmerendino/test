@@ -15,7 +15,7 @@ function WorkoutDetails(props) {
     }
 
     const rateClicked = rate => evt => {
-        fetch(`http://127.0.0.1:8000/api/workouts/${wk.id}/rate_workout/`, {
+        fetch(`https://woapi.brtechservice.com/api/workouts/${wk.id}/rate_workout/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ function WorkoutDetails(props) {
     }
 
     const getDetails = () => {
-        fetch(`http://127.0.0.1:8000/api/workouts/${wk.id}/`, {
+        fetch(`https://woapi.brtechservice.com/api/workouts/${wk.id}/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
