@@ -1,6 +1,6 @@
 export class API{
     static loginUser(body) {
-        return fetch(`http://woapi.us-east-2.elasticbeanstalk.com/auth/`, {
+        return fetch(`https://woapi.brtechservice.com/auth/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -10,7 +10,7 @@ export class API{
     }
 
     static registerUser(body) {
-        return fetch(`http://woapi.us-east-2.elasticbeanstalk.com/api/users/`, {
+        return fetch(`https://woapi.brtechservice.com/api/users/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ export class API{
     }
 
     static getWorkouts(token) {
-        return fetch("http://woapi.us-east-2.elasticbeanstalk.com/api/workouts/", {
+        return fetch("https://woapi.brtechservice.com/api/workouts/", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ export class API{
     }
 
     static updateWorkout(wk, body, token) {
-        return fetch(`http://woapi.us-east-2.elasticbeanstalk.com/api/workouts/${wk}/`, {
+        return fetch(`https://woapi.brtechservice.com/api/workouts/${wk}/`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ export class API{
     }
 
     static createWorkout(body, token) {
-        return fetch(`http://woapi.us-east-2.elasticbeanstalk.com/api/workouts/`, {
+        return fetch(`https://woapi.brtechservice.com/api/workouts/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export class API{
     }
 
     static deleteWorkout(wk_id, token) {
-        return fetch(`http://woapi.us-east-2.elasticbeanstalk.com/api/workouts/${wk_id}/`, {
+        return fetch(`https://woapi.brtechservice.com/api/workouts/${wk_id}/`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
